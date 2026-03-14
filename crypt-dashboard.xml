@@ -14,14 +14,14 @@
   <Project>https://github.com/DJ3vil/crypt-dashboard</Project>
   <Overview>A sleek Docker management dashboard with real-time container monitoring, start/stop controls, compact mode, and 13 themes. Auto-discovers containers via Docker labels (homepage.*).</Overview>
   <Category>Tools: Status:Stable</Category>
-  <Icon>https://raw.githubusercontent.com/DJ3vil/unraid-templates/main/icons/crypt-dashboard.png</Icon>
+  <Icon>https://raw.githubusercontent.com/DJ3vil/unraid-templates/master/icons/crypt-dashboard.png</Icon>
   <Description>A sleek Docker management dashboard with real-time container monitoring, start/stop controls, compact mode, and 13 themes. Auto-discovers containers via Docker labels (homepage.*).</Description>
   <ExtraSearchTerms>dashboard docker monitor container management homepage</ExtraSearchTerms>
   <DonateText/>
   <DonateLink/>
   <DonateImg/>
   <WebUI>http://[IP]:[PORT:3080]/</WebUI>
-  <TemplateURL>https://raw.githubusercontent.com/DJ3vil/unraid-templates/main/crypt-dashboard.xml</TemplateURL>
+  <TemplateURL>https://raw.githubusercontent.com/DJ3vil/unraid-templates/master/crypt-dashboard.xml</TemplateURL>
   <Requires/>
   <Config Name="WebUI Port" Target="3000" Default="3080" Mode="tcp" Description="Dashboard web interface port" Type="Port" Display="always" Required="true" Mask="false">3080</Config>
   <Config Name="Docker Socket" Target="/var/run/docker.sock" Default="/var/run/docker.sock" Mode="ro" Description="Required: Docker socket for container management" Type="Path" Display="always" Required="true" Mask="false">/var/run/docker.sock</Config>
