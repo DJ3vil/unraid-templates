@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>CryptDashboard</Name>
+  <Repository>ghcr.io/dj3vil/crypt-dashboard:latest</Repository>
+  <Registry>https://github.com/DJ3vil/crypt-dashboard/pkgs/container/crypt-dashboard</Registry>
+  <Branch>
+    <Tag>latest</Tag>
+    <TagDescription>Latest stable release</TagDescription>
+  </Branch>
+  <Network>bridge</Network>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://github.com/DJ3vil/crypt-dashboard/issues</Support>
+  <Project>https://github.com/DJ3vil/crypt-dashboard</Project>
+  <Overview>A sleek Docker management dashboard with real-time container monitoring, start/stop controls, compact mode, and 13 themes. Auto-discovers containers via Docker labels (homepage.*).</Overview>
+  <Category>Tools: Status:Stable</Category>
+  <Icon>https://raw.githubusercontent.com/DJ3vil/unraid-templates/main/icons/crypt-dashboard.png</Icon>
+  <Description>A sleek Docker management dashboard with real-time container monitoring, start/stop controls, compact mode, and 13 themes. Auto-discovers containers via Docker labels (homepage.*).</Description>
+  <ExtraSearchTerms>dashboard docker monitor container management homepage</ExtraSearchTerms>
+  <DonateText/>
+  <DonateLink/>
+  <DonateImg/>
+  <WebUI>http://[IP]:[PORT:3080]/</WebUI>
+  <TemplateURL>https://raw.githubusercontent.com/DJ3vil/unraid-templates/main/crypt-dashboard.xml</TemplateURL>
+  <Requires/>
+  <Config Name="WebUI Port" Target="3000" Default="3080" Mode="tcp" Description="Dashboard web interface port" Type="Port" Display="always" Required="true" Mask="false">3080</Config>
+  <Config Name="Docker Socket" Target="/var/run/docker.sock" Default="/var/run/docker.sock" Mode="ro" Description="Required: Docker socket for container management" Type="Path" Display="always" Required="true" Mask="false">/var/run/docker.sock</Config>
+  <Config Name="App Data" Target="/appdata" Default="/mnt/user/appdata/crypt-dashboard" Mode="rw" Description="Persistent storage for settings" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/crypt-dashboard</Config>
+  <Config Name="Host Proc" Target="/host/proc" Default="/proc" Mode="ro" Description="Mount /proc for CPU and RAM monitoring" Type="Path" Display="always" Required="false" Mask="false">/proc</Config>
+  <Config Name="Host Sys" Target="/host/sys" Default="/sys" Mode="ro" Description="Mount /sys for temperature and disk monitoring" Type="Path" Display="always" Required="false" Mask="false">/sys</Config>
+  <Config Name="NPM Database" Target="/data/npm.sqlite" Default="" Mode="ro" Description="Optional: Nginx Proxy Manager database for auto-detecting proxy URLs" Type="Path" Display="advanced" Required="false" Mask="false"/>
+  <Config Name="Timezone" Target="TZ" Default="Europe/Berlin" Mode="" Description="Timezone" Type="Variable" Display="always" Required="false" Mask="false">Europe/Berlin</Config>
+  <Config Name="Server IP" Target="SERVER_IP" Default="" Mode="" Description="Optional: Your server IP for generating WebUI links" Type="Variable" Display="advanced" Required="false" Mask="false"/>
+  <Config Name="HOST_PROC" Target="HOST_PROC" Default="/host/proc" Mode="" Description="Internal path for proc mount" Type="Variable" Display="advanced" Required="false" Mask="false">/host/proc</Config>
+  <Config Name="HOST_SYS" Target="HOST_SYS" Default="/host/sys" Mode="" Description="Internal path for sys mount" Type="Variable" Display="advanced" Required="false" Mask="false">/host/sys</Config>
+</Container>
