@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <Container version="2">
-  <Name>CryptDashboard</Name>
+  <Name>Crypt Dashboard</Name>
   <Repository>ghcr.io/dj3vil/crypt-dashboard:latest</Repository>
   <Registry>https://github.com/DJ3vil/crypt-dashboard/pkgs/container/crypt-dashboard</Registry>
   <Branch>
